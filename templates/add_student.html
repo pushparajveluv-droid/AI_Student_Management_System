@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Student</title>
+</head>
+<body>
+
+<h2>Student Registration</h2>
+
+<form method="POST" enctype="multipart/form-data">
+
+    <label>Register Number</label><br>
+    <input type="text" name="register_number" required><br><br>
+
+    <label>Student Name</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Father Name</label><br>
+    <input type="text" name="father_name" required><br><br>
+
+    <label>Mother Name</label><br>
+    <input type="text" name="mother_name" required><br><br>
+
+    <label>Address</label><br>
+    <textarea name="address" rows="4" cols="40" required></textarea><br><br>
+
+    <label>Email</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Phone Number</label><br>
+    <input type="text" name="phone" required><br><br>
+
+    <label>Department</label><br>
+    <select name="department" required>
+        <option value="">--Select Department--</option>
+        <option>B.Sc Computer Science</option>
+        <option>BCA</option>
+        <option>B.Com</option>
+        <option>BBA</option>
+        <option>B.Sc Mathematics</option>
+        <option>B.Sc Physics</option>
+    </select><br><br>
+
+    <label>Year</label><br>
+    <select name="year" required>
+        <option value="">--Select Year--</option>
+        <option>I Year</option>
+        <option>II Year</option>
+        <option>III Year</option>
+    </select><br><br>
+
+    <label>Gender</label><br>
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+    <br><br>
+
+    <label>Student Photo</label><br>
+    <input type="file" name="photo"><br><br>
+
+    <button type="submit">Save Student</button>
+
+</form>
+
+<br>
+
+<a href="/dashboard">⬅ Back to Dashboard</a>
+
+</body>
+</html>

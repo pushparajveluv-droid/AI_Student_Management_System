@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial;
+            background:#f4f6f9;
+        }
+
+        .header{
+            background:#0d6efd;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        .container{
+            width:90%;
+            margin:auto;
+            margin-top:30px;
+        }
+
+        .card{
+            background:white;
+            width:250px;
+            display:inline-block;
+            margin:15px;
+            padding:20px;
+            text-align:center;
+            border-radius:10px;
+            box-shadow:0px 0px 10px lightgray;
+        }
+
+        a{
+            text-decoration:none;
+            color:white;
+        }
+
+        .btn{
+            background:#0d6efd;
+            padding:10px 20px;
+            border-radius:5px;
+            display:inline-block;
+            margin-top:15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>Welcome {{ fullname }}</h1>
+<div class="card">
+    <h2>Total Students</h2>
+    <h1>{{ total }}</h1>
+</div>
+
+<p>AI Multi User Student Management System</p>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Add Student</h2>
+
+<a href="/add_student" class="btn">Open</a>
+
+</div>
+
+<div class="card">
+
+<h2>View Students</h2>
+
+<a href="/students" class="btn">Open</a>
+
+</div>
+
+<div class="card">
+
+<h2>Logout</h2>
+
+<a href="/logout" class="btn">Logout</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

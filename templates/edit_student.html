@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Student</title>
+</head>
+<body>
+
+<h2>Edit Student</h2>
+
+<form method="POST">
+
+    <label>Register Number</label><br>
+    <input type="text" name="register_number"
+    value="{{ student.register_number }}" required><br><br>
+
+    <label>Name</label><br>
+    <input type="text" name="name"
+    value="{{ student.name }}" required><br><br>
+
+    <label>Department</label><br>
+    <input type="text" name="department"
+    value="{{ student.department }}" required><br><br>
+
+    <label>Year</label><br>
+    <input type="text" name="year"
+    value="{{ student.year }}" required><br><br>
+
+    <label>Email</label><br>
+    <input type="email" name="email"
+    value="{{ student.email }}" required><br><br>
+
+    <label>Phone</label><br>
+    <input type="text" name="phone"
+    value="{{ student.phone }}" required><br><br>
+
+    <button type="submit">Update Student</button>
+
+</form>
+
+</body>
+</html>
