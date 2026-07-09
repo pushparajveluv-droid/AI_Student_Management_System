@@ -10,10 +10,11 @@ app.secret_key = "student_management_2026"
 
 # Database Connection
 db = mysql.connector.connect(
-    host="localhost",
+    host="hayabusa.proxy.rlwy.net",
+    port=52517,
     user="root",
-    password="Kvelu@2005",
-    database="student_management"
+    password="SHsBDHNMNubqJGOcnMyaOAeEuSCtBQEe",
+    database="railway"
 )
 
 cursor = db.cursor(dictionary=True)
